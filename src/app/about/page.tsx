@@ -147,8 +147,10 @@ export default function Example() {
           <Tab.Panels className="mt-2 basis-3/6 ">
             {Object.values(categories).map((posts, idx) => (
               <Tab.Panel key={idx}>
-                {posts.map((post) => (
-                  <div className="text-sm pb-5">{post.title}</div>
+                {posts.map((post, i) => (
+                  <div key={i} className="text-sm pb-5">
+                    {post.title}
+                  </div>
                 ))}
               </Tab.Panel>
             ))}

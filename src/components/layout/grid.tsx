@@ -5,7 +5,11 @@ export default function Grid({ GridData }) {
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 w-screen  border-t-2 ">
       {GridData.map((info, i) => {
         return (
-          <Link href="/project/i" className="hover:text-primary hover:bg-black">
+          <Link
+            key={i}
+            href="/project/i"
+            className="hover:text-primary hover:bg-black"
+          >
             <div className="p-3 border-r-2  border-b-2 " key={i}>
               <Image
                 alt="image"
