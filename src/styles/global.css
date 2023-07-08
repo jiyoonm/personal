@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-[#F4F4F4] h-screen w-screen;
+}
+h1 {
+  @apply text-2xl font-bold  md:text-3xl;
+}
+
+h2 {
+  @apply text-xl font-bold  md:text-2xl;
+}
+
+h3 {
+  @apply text-sm font-semibold  md:text-xl;
+}
+
+.container-main {
+  @apply container mx-auto pb-10;
+}
+
+.container-expand {
+  margin-left: calc((100vw - 100%) / -2);
+  margin-right: calc((100vw - 100%) / -2);
+}
+
+.dark-section {
+  @apply bg-secondary container-expand text-primary-light;
+}
