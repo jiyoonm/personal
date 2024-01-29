@@ -5,20 +5,26 @@ export default function Header() {
   const smIconSize = 16;
 
   return (
-    <header className="h-14  mt-6 ">
-      <div className="border-t-grey  	pb-6  border-b-[1px] mx-auto flex w-[95%] justify-between">
-        <h2 className=" basis-2/5">
+    <header className=" px-2 py-3 sticky top-0 z-50 bg-[#e9e9e9]">
+      <div className="border-t-grey  	 mx-auto flex w-full justify-between">
+        {/* <h2 className=" basis-2/5">
           <Link href="/">Jiyoon Moon</Link>
-        </h2>
-        <ul className="flex basis-3/5 justify-end gap-10 px-10 mt-auto ">
+        </h2> */}
+        <ul className=" mx-5 mt-auto   flex w-full justify-between text-lg">
           <li>
             <Link href="/" className="hover:text-gray-300">
-              Work &#8599;
+              Jiyoon Moon
+            </Link>
+          </li>
+
+          <li>
+            <Link href="/about" className="hover:text-gray-300">
+              Info
             </Link>
           </li>
           <li>
             <Link href="/about" className="hover:text-gray-300">
-              About &#8599;
+              Contact
             </Link>
           </li>
         </ul>

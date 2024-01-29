@@ -13,9 +13,7 @@ export default function Section({
 }: SectionProps) {
   return (
     <div className={`${dark ? `dark-section ${height}` : `${height}`}`}>
-      <div className={`${fullWidth ? "container-expand" : "container-main"}`}>
-        {children}
-      </div>
+      <div>{children}</div>
     </div>
   );
 }

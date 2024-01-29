@@ -3,7 +3,10 @@ import Footer from "../components/layout/footer";
 import Layout from "../components/layout/layout";
 import Navbar from "../components/layout/navbar";
 import "../styles/global.css";
-const inter = Inter({ subsets: ["latin"] });
+const montserrat = Inter({
+  subsets: ["latin"],
+  weight: ["400", "500", "700"],
+});
 
 export const metadata = {
   title: "Create Next App",
@@ -17,7 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={montserrat.className}>
         <Navbar />
         <Layout>{children}</Layout>
         <Footer />

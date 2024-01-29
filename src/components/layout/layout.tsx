@@ -3,5 +3,5 @@ interface LayoutProps {
 }
 
 export default function LayoutTailwind({ children }: LayoutProps) {
-  return <main className="container-main">{children}</main>;
+  return <main className="container-main ">{children}</main>;
 }
