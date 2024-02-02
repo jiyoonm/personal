@@ -15,9 +15,7 @@ interface ArchiveDetail {
   overview?: string;
 }
 export default function Detail({ params }: { params: { id: string } }) {
-  const detail: ArchiveDetail | undefined = archiveInfo.find(
-    (item) => item.id === params.id
-  );
+  const detail = archiveInfo.find((item) => item.id === params.id);
 
   if (!detail) {
     // Handle the case where the detail is not found
