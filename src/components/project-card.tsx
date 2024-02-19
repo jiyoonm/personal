@@ -4,8 +4,16 @@ export default function ProjectCard({ info }) {
   return (
     <Link href={`/project/${info.id}`} className="px-[.35rem] pb-3 pt-[.7rem]">
       <div className=" ">
-        <div className="relative h-[27rem]  w-full overflow-hidden">
+        <div className="w-full h-auto overflow-hidden">
           <Image
+            src={info.imgUrl}
+            alt="Final Image"
+            layout="responsive"
+            width={100}
+            height={50} // Adjust height proportionally
+            objectFit="cover"
+          />
+          {/* <Image
             alt="image"
             src={info.imgUrl}
             className="absolute inset-0 w-full h-full"
@@ -13,7 +21,7 @@ export default function ProjectCard({ info }) {
             // height={400}
             layout="fill"
             object-fit="contain"
-          />
+          /> */}
         </div>
         <div className="flex flex-row mx-1 my-3 justify-between child:leading-5 ">
           <div>

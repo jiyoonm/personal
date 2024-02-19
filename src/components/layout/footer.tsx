@@ -3,8 +3,8 @@ function Footer() {
   return (
     <footer className=" bg-stone-200 py-10">
       <div className="flex bg-stone-200 mx-auto w-11/12 justify-center pb-10 gap-x-20 ">
-        <h2 className="basis-2/6 text-right "></h2>
-        <div className="basis-3/6 grid grid-cols-2 gap-10">
+        <h2 className="lg:basis-2/6 text-right "></h2>
+        <div className="lg:basis-3/6 grid grid-cols-2 gap-10">
           <FooterLink
             label={"Have any questions?"}
             sublabel={"General Inquiries"}

@@ -5,12 +5,12 @@ export default function Header() {
   const smIconSize = 16;
 
   return (
-    <header className=" px-2 py-3 sticky top-0 z-50 bg-[#e9e9e9]">
+    <header className=" sticky top-0 z-50 bg-[#f0f0f0] ">
       <div className="border-t-grey  	 mx-auto flex w-full justify-between">
         {/* <h2 className=" basis-2/5">
           <Link href="/">Jiyoon Moon</Link>
         </h2> */}
-        <ul className=" mx-5 mt-auto   flex w-full justify-between text-lg">
+        <ul className=" py-3 mx-4 mt-auto   flex w-full justify-between text-lg border-b border-gray-400 ">
           <li>
             <Link href="/" className="hover:text-gray-300">
               Jiyoon Moon
