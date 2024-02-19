@@ -9,6 +9,7 @@ interface ArchiveDetail {
   title: string;
   year: number;
   tags: string[];
+  role?: string[];
   imgFolder?: string;
   photoCount?: number;
   link: string;
@@ -16,7 +17,7 @@ interface ArchiveDetail {
   description: string;
   overview?: string;
 }
-export default function Detail({ params }: { params: { id: string } }) {
+export default function Detaixl({ params }: { params: { id: string } }) {
   const detail = archiveInfo.find((item) => item.id === params.id);
 
   if (!detail) {

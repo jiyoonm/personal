@@ -27,6 +27,7 @@ const archiveInfo = [
   },
   {
     id: "flourish",
+
     imgUrl: "/static/flourish/wave.jpg",
     tags: ["Backend", "UI/UX"],
     mainImage: "/static/flourish/energy.jpeg",
@@ -67,6 +68,8 @@ const archiveInfo = [
     imgUrl: "/static/beats/beats.jpg",
     tags: ["Unity", "UI/UX"],
     year: 2021,
+    role: ["Creative Technologist", "Software Engineer"],
+
     mainImage: "/static/beats/beats.jpg",
     grid: null,
     finalImage: "/static/beats/image3.png",
@@ -84,6 +87,8 @@ const archiveInfo = [
     year: "2020",
     mainImage: "/static/wifi/nyc.gif",
     grid: null,
+    role: ["Creative Technologist", "Software Engineer"],
+
     finalImage: "/static/wifi/slide.png",
     title: "Wifi NYC",
     blurb:
@@ -96,6 +101,8 @@ const archiveInfo = [
     imgUrl: "/static/map/bg2.jpg",
     tags: ["Python", "Quantum Computing"],
     year: "2020-Present",
+    role: ["Creative Technologist", "Software Engineer"],
+
     mainImage: null,
     grid: ["/static/map/title.png", "/static/map/bg.jpg"],
     finalImage: null,
@@ -111,6 +118,8 @@ const archiveInfo = [
     imgUrl: "/static/e.jpeg",
     tags: ["Python", "Quantum Computing"],
     year: "2020-Present",
+    role: ["Creative Technologist", "Software Engineer"],
+
     title: "Playground",
     blurb:
       "Experiments and works in progress that I create during my free time.",
