@@ -28,7 +28,7 @@ export default function Detaixl({ params }: { params: { id: string } }) {
 
   return (
     <div className="w-full ">
-      <div className="pb-44">
+      <div className="pb-10 lg:pb-20">
         <div className=" flex-col lg:flex-row flex justify-between w-full  pt-10 py-10">
           <div className="flex flex-col gap-3  w-full lg:w-[45%] pr-15  justify-between">
             <div className="flex flex-col gap-3">
