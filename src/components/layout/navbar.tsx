@@ -10,7 +10,7 @@ export default function Header() {
         {/* <h2 className=" basis-2/5">
           <Link href="/">Jiyoon Moon</Link>
         </h2> */}
-        <ul className=" py-3 mx-4 mt-auto   flex w-full justify-between text-lg border-b border-gray-400 ">
+        <ul className=" py-3  px-4 mt-auto   flex w-full justify-between text-lg border-b border-gray-600 ">
           <li>
             <Link href="/" className="hover:text-gray-300">
               Jiyoon Moon

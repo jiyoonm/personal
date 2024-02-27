@@ -6,9 +6,9 @@ interface SSProps {
 
 export default function HeroSection({}) {
   return (
-    <div className="border-b border-gray-300 mx-3 pb-10">
+    <div className="border-b border-gray-100  pb-10">
       <div className="h-40"></div>
-      <h1 className=" w-1/2 font-normal">
+      <h1 className=" w-1/2 font-normal mx-7">
         Jiyoon Moon is a Software Engineer and Creative Technologist currently
         based in New York City.
       </h1>

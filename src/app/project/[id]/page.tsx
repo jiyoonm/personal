@@ -28,8 +28,8 @@ export default function Detaixl({ params }: { params: { id: string } }) {
 
   return (
     <div className="w-full ">
-      <div className="pb-10 lg:pb-20">
-        <div className=" flex-col lg:flex-row flex justify-between w-full  pt-10 py-10">
+      <div className="pb-10 lg:pb-20 ">
+        <div className=" px-5 flex-col lg:flex-row flex justify-between w-full  pt-10 py-10">
           <div className="flex flex-col gap-3  w-full lg:w-[45%] pr-15  justify-between">
             <div className="flex flex-col gap-3">
               <PageHeaderDetail label={"PROJECT"} content={detail.title} />
@@ -58,16 +58,16 @@ export default function Detaixl({ params }: { params: { id: string } }) {
             </div>
           )}
         </div>
-        <div className="flex flex-col md:flex-row md:items-center    justify-between border-gray-400 border-y md:h-36">
-          <div className="flex items-center basis-1/3  h-full m-2 md:m-0">
+        <div className="flex flex-col md:flex-row md:items-center    justify-between border-gray-600 border-y md:h-36">
+          <div className=" md:px-5 flex items-center basis-1/3  h-full m-2 md:m-0">
             <PageHeaderDetail label={"ROLE"} content={detail.role.join("/n")} />
           </div>
-          <div className="md:border-l border-b border-gray-400  w-full md:h-full md:w-0"></div>
+          <div className="md:border-l border-b border-gray-600  w-full md:h-full md:w-0"></div>
           <div className="flex items-center basis-[30%] h-full m-2 ">
             <PageHeaderDetail label={"YEAR"} content={detail.year} />
           </div>
 
-          <div className="md:border-l border-b border-gray-400  w-full md:h-full md:w-0"></div>
+          <div className="md:border-l border-b border-gray-600  w-full md:h-full md:w-0"></div>
 
           <div className="flex items-center basis-[28%]  h-full m-2 ">
             <PageHeaderDetail label={"TEAM"} content={detail.team} />
@@ -169,7 +169,7 @@ export default function Detaixl({ params }: { params: { id: string } }) {
       </div>
       <div>
         {/* <h1 className="font-normal">Other Works</h1> */}
-        <ProjectList />
+        <ProjectList id={detail.id} />
       </div>
     </div>
   );
