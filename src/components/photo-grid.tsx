@@ -10,9 +10,7 @@ interface PhotoGridProps {
 
 export default function PhotoGrid({
   count = 7,
-  mainImage,
   grid = null,
-  finalImage,
 }: PhotoGridProps): ReactElement {
   return (
     <div className="w-full lg:w-[97%] text-center mx-auto my-10">

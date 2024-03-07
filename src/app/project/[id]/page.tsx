@@ -46,10 +46,10 @@ export default function Detaixl({ params }: { params: { id: string } }) {
             </div>
           </div>
 
-          {detail.mainImage && (
+          {detail.imgUrl && (
             <div className="relative  h-[15rem] lg:h-[30rem] lg:w-[48rem]">
               <Image
-                src={detail.mainImage}
+                src={detail.imgUrl}
                 alt="Main Image"
                 layout="fill"
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
@@ -75,16 +75,10 @@ export default function Detaixl({ params }: { params: { id: string } }) {
         </div>
 
         <div className="flex flex-col justify-center align-middle">
-          {/* <div className="w-1/3">
-          <PageHeaderDetail
-            label={"PROJECT DETAILS"}
-            content={detail.description}
-          />
-        </div> */}
-          {detail.img && (
+          {detail.firstImage && (
             <div className=" w-full lg:w-[64%] h-auto text-center mx-auto m-10">
               <Image
-                src={detail.img}
+                src={detail.firstImage}
                 alt="Main Image"
                 layout="responsive"
                 width={100}
@@ -93,59 +87,43 @@ export default function Detaixl({ params }: { params: { id: string } }) {
               />
             </div>
           )}
+          {detail.concept && (
+            <div className="w-full">
+              <PageRightDetail label={"CONCEPT"} content={detail.concept} />
+            </div>
+          )}
+          <PhotoGrid grid={detail.grid} />
+        </div>
+        {detail.concept && (
+          <div className="w-full">
+            <PageRightDetail label={"PROCESS"} content={detail.process} />
+          </div>
+        )}
+
+        {detail.secondImage && (
+          <div className=" w-full lg:w-[64%] h-auto text-center mx-auto m-10">
+            <Image
+              src={detail.secondImage}
+              alt="Main Image"
+              layout="responsive"
+              width={100}
+              height={50} // Adjust height proportionally
+              objectFit="cover"
+            />
+          </div>
+        )}
+        {detail.additional && (
           <div className="w-full">
             <PageRightDetail
               label={"PROJECT DETAILS"}
-              content={detail.description}
-            />
-          </div>
-          <PhotoGrid
-            grid={detail.grid}
-            mainImage={detail.mainImage}
-            finalImage={detail.finalImage}
-            count={detail.photoCount}
-          />
-        </div>
-        <div className="w-full">
-          <PageRightDetail
-            label={"PROJECT DETAILS"}
-            content={detail.description}
-          />
-        </div>
-        {/* {detail.sImg && (
-        <div className=" w-full lg:w-[60%] h-auto text-center mx-auto m-10">
-          <Image
-            src={detail.sImg}
-            alt="Main Image"
-            layout="responsive"
-            width={100}
-            height={50} // Adjust height proportionally
-            objectFit="cover"
-          />
-        </div>
-      )} */}
-        {detail.sImg && (
-          <div className=" w-full lg:w-[64%] h-auto text-center mx-auto m-10">
-            <Image
-              src={detail.sImg}
-              alt="Main Image"
-              layout="responsive"
-              width={100}
-              height={50} // Adjust height proportionally
-              objectFit="cover"
+              content={detail.additional}
             />
           </div>
         )}
-        <div className="w-full">
-          <PageRightDetail
-            label={"PROJECT DETAILS"}
-            content={detail.description}
-          />
-        </div>
-        {detail.last && (
+        {detail.thirdImage && (
           <div className=" w-full lg:w-[68%] h-auto text-center mx-auto m-10">
             <Image
-              src={detail.last}
+              src={detail.thirdImage}
               alt="Main Image"
               layout="responsive"
               width={100}
@@ -154,10 +132,10 @@ export default function Detaixl({ params }: { params: { id: string } }) {
             />
           </div>
         )}
-        {detail.mainImage && (
+        {detail.lastImage && (
           <div className=" w-full lg:w-[65%] h-auto text-center mx-auto m-5">
             <Image
-              src={detail.mainImage}
+              src={detail.lastImage}
               alt="Main Image"
               layout="responsive"
               width={100}

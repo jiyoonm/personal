@@ -1,19 +1,35 @@
 import FooterLink from "../footer-link";
+import Link from "next/link";
+
 function Footer() {
   return (
-    <footer className="border-t border-gray-600 bg-stone-200 py-10">
-      {/* <div className="flex bg-stone-200 mx-auto w-11/12 justify-center pb-10 gap-x-20 ">
-        <h2 className="lg:basis-2/6 text-right "></h2>
-        <div className="lg:basis-3/6 grid grid-cols-2 gap-10">
-          <FooterLink
-            label={"Have any questions?"}
-            sublabel={"General Inquiries"}
-            link={"jiyoon@gmail"}
-          />
-   
+    <footer className="border-t border-gray-600 py-10 bg-stone-200 px-4">
+      {/* <h2 className=" basis-2/5">
+          <Link href="/">Jiyoon Moon</Link>
+        </h2> */}
+      <ul className="   flex w-full justify-between text-lg  ">
+        <li>
+          <Link href="/" className="hover:text-gray-300"></Link>
+        </li>
+
+        {/* <li>
+            <Link href="/about" className="hover:text-gray-300">
+              Info
+            </Link>
+          </li> */}
+        <div className="  flex gap-12">
+          <li>
+            <Link href="/about" className="hover:text-gray-300">
+              GitHub
+            </Link>
+          </li>
+          <li>
+            <Link href="/about" className="hover:text-gray-300">
+              LinkedIn
+            </Link>
+          </li>
         </div>
-      </div> */}
-      <h6 className="text-center">© {new Date().getFullYear()} Jiyoon Moon</h6>
+      </ul>
     </footer>
   );
 }

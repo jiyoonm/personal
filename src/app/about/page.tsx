@@ -1,117 +1,31 @@
-"use client";
-import { Tab } from "@headlessui/react";
-import { useState } from "react";
-function classNames(...classes) {
-  return classes.filter(Boolean).join(" ");
-}
-
 export default function Example() {
-  let [categories] = useState({
-    About: [
-      {
-        id: 1,
-        title: (
-          <p>
-            I’m currently based in Brooklyn and finishing up my thesis and final
-            year at Parsons, majoring in Design and Technology with a minor in
-            Communication Design. My interests lie in creative coding, quantum
-            computing, and immersive environments. In my work, I specialize in
-            web development, interaction design, and data-driven visualizations.
-          </p>
-        ),
-      },
-      {
-        id: 2,
-        title: (
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          </p>
-        ),
-      },
-    ],
-    "Design Values": [
-      {
-        id: 1,
-        title: (
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum. Lorem ipsumz
-            dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea commodo consequat. Duis aute irure dolor in reprehenderit in
-            voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-            officia deserunt mollit anim id est laborum.
-          </p>
-        ),
-      },
-      {
-        id: 2,
-        title: (
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          </p>
-        ),
-      },
-    ],
-  });
-
   return (
-    <div className="w-full ">
-      <Tab.Group vertical>
-        <div className="flex flex-row w-full gap-5 ">
-          <Tab.List className="flex flex-col rounded-xl basis-2/6">
-            {Object.keys(categories).map((category) => (
-              <Tab
-                key={category}
-                className={({ selected }) =>
-                  classNames(
-                    "text-left py-3",
-
-                    selected
-                      ? "text-black"
-                      : "text-gray-300 hover:text-gray-200"
-                  )
-                }
-              >
-                {({ selected }) => (
-                  <p>
-                    {category}{" "}
-                    {selected && <span className="text-red-400">&#8599;</span>}
-                  </p>
-                )}
-              </Tab>
-            ))}
-          </Tab.List>
-          <Tab.Panels className="mt-2 basis-3/6 ">
-            {Object.values(categories).map((posts, idx) => (
-              <Tab.Panel key={idx}>
-                {posts.map((post, i) => (
-                  <div key={i} className="text-sm pb-5">
-                    {post.title}
-                  </div>
-                ))}
-              </Tab.Panel>
-            ))}
-          </Tab.Panels>
+    <>
+      <div className="w-full flex flex-row p-20 min-h-[85vh] justify-end	">
+        <div className="flex flex-col lg:basis-[50%] gap-10 lg:pr-32">
+          <div className="">Hello, I’m Jiyoon.</div>
+          <div className="basis-1/2">
+            I’m a software engineer and creative technologist based in NYC. I’m
+            currently a part of the team at Studio Elsewhere, developing
+            immersive and interactive environments aimed at supporting mental
+            wellness in medical settings. Our projects are specifically designed
+            to offer solace to healthcare workers, aid neuroscience research in
+            brain recovery, and enhance the rehabilitation experience for
+            children visiting medical centers.
+          </div>
+          <div className="basis-1/2">
+            I graduated with a BFA in Design and Technology and a minor in
+            communication design from the Parsons School of Design. During my
+            degree, I developed an interest in game design, creative coding, and
+            data-driven visualizations. I also began independently studying
+            Quantum Computing, obtaining a Practitioner Certificate from IBM.
+          </div>
+          <div className="basis-1/2">
+            Don’t hesitate to reach out! I love collaborating and hearing
+            feedback.
+          </div>
         </div>
-      </Tab.Group>
-    </div>
+      </div>
+    </>
   );
 }

@@ -23,7 +23,10 @@ export default function Header() {
             </Link>
           </li>
           <li>
-            <Link href="/about" className="hover:text-gray-300">
+            <Link
+              href="mailto:jiyoon.moon@outlook.com"
+              className="hover:text-gray-300"
+            >
               Contact
             </Link>
           </li>
