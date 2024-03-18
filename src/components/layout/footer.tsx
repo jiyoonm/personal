@@ -19,12 +19,18 @@ function Footer() {
           </li> */}
         <div className="  flex gap-12">
           <li>
-            <Link href="/about" className="hover:text-gray-300">
+            <Link
+              href="https://github.com/jiyoonm"
+              className="hover:text-gray-300"
+            >
               GitHub
             </Link>
           </li>
           <li>
-            <Link href="/about" className="hover:text-gray-300">
+            <Link
+              href="https://www.linkedin.com/in/jiyoon-moon/"
+              className="hover:text-gray-300"
+            >
               LinkedIn
             </Link>
           </li>

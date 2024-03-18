@@ -21,8 +21,7 @@ export default function Example() {
             Quantum Computing, obtaining a Practitioner Certificate from IBM.
           </div>
           <div className="basis-1/2">
-            Don’t hesitate to reach out! I love collaborating and hearing
-            feedback.
+            Don’t hesitate to reach out! I'm always looking to collaborate.
           </div>
         </div>
       </div>

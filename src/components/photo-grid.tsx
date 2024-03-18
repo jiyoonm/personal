@@ -13,7 +13,7 @@ export default function PhotoGrid({
   grid = null,
 }: PhotoGridProps): ReactElement {
   return (
-    <div className="w-full lg:w-[97%] text-center mx-auto my-10">
+    <div className="w-full lg:w-[97%] text-center mx-auto mt-10">
       {/* {mainImage && (
         <div className="w-[60%] h-auto text-center mx-auto m-10">
           <Image

@@ -17,7 +17,7 @@ interface ArchiveDetail {
   description: string;
   overview?: string;
 }
-export default function Detaixl({ params }: { params: { id: string } }) {
+export default function Detail({ params }: { params: { id: string } }) {
   const detail = archiveInfo.find((item) => item.id === params.id);
 
   if (!detail) {
@@ -70,7 +70,14 @@ export default function Detaixl({ params }: { params: { id: string } }) {
           <div className="md:border-l border-b border-gray-600  w-full md:h-full md:w-0"></div>
 
           <div className="flex items-center basis-[28%]  h-full m-2 ">
-            <PageHeaderDetail label={"TEAM"} content={detail.team} />
+            {detail.team ? (
+              <PageHeaderDetail label={"TEAM"} content={detail.team} />
+            ) : (
+              <PageHeaderDetail
+                label={"TECHNOLOGIES"}
+                content={detail.technologies.join("/n")}
+              />
+            )}
           </div>
         </div>
 
@@ -94,8 +101,8 @@ export default function Detaixl({ params }: { params: { id: string } }) {
           )}
           <PhotoGrid grid={detail.grid} />
         </div>
-        {detail.concept && (
-          <div className="w-full">
+        {detail.process && (
+          <div className="w-full mt-10">
             <PageRightDetail label={"PROCESS"} content={detail.process} />
           </div>
         )}
@@ -136,6 +143,18 @@ export default function Detaixl({ params }: { params: { id: string } }) {
           <div className=" w-full lg:w-[65%] h-auto text-center mx-auto m-5">
             <Image
               src={detail.lastImage}
+              alt="Main Image"
+              layout="responsive"
+              width={100}
+              height={50} // Adjust height proportionally
+              objectFit="cover"
+            />
+          </div>
+        )}
+        {detail.finalImage && (
+          <div className=" w-full lg:w-[65%] h-auto text-center mx-auto m-5">
+            <Image
+              src={detail.finalImage}
               alt="Main Image"
               layout="responsive"
               width={100}
