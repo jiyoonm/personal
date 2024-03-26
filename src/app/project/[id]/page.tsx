@@ -119,13 +119,15 @@ export default function Detail({ params }: { params: { id: string } }) {
             />
           </div>
         )}
-        {detail.additional && (
+        {detail.additional ? (
           <div className="w-full">
             <PageRightDetail
               label={"PROJECT DETAILS"}
               content={detail.additional}
             />
           </div>
+        ) : (
+          <></>
         )}
         {detail.thirdImage && (
           <div className=" w-full lg:w-[68%] h-auto text-center mx-auto m-10">
