@@ -10,12 +10,14 @@ interface ArchiveDetail {
   year: number;
   tags: string[];
   role?: string[];
+  technologies?: string[];
   imgFolder?: string;
   photoCount?: number;
   link: string;
   blurb: string;
   description: string;
   overview?: string;
+  additional?: string;
 }
 export default function Detail({ params }: { params: { id: string } }) {
   const detail = archiveInfo.find((item) => item.id === params.id);

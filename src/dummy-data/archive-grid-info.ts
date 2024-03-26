@@ -166,6 +166,7 @@ const archiveInfo = [
       "To effectively create a comphrensive tour of the gardens and history in Loisaida, I began by speaking with community garden leaders, including gardeners at La Plaza Cultural. I visited each garden in the area and took pictures of subleties and new developments like the Citi Bike Map.",
     description:
       "This website is an informative tour of New York’s history of gentrification in the Lower East Side and the importance of community gardens in fighting against this dispossession. Seemingly mundane elements within our spaces can actually tell stories of an ongoing protest.",
+    additional: null,
   },
   // {
   //   id: "experiments",
