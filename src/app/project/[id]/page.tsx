@@ -75,7 +75,7 @@ export default function Detail({ params }: { params: { id: string } }) {
             ) : (
               <PageHeaderDetail
                 label={"TECHNOLOGIES"}
-                content={detail.technologies.join("/n")}
+                content={detail.technologies?.join("/n")}
               />
             )}
           </div>
