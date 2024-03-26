@@ -50,10 +50,11 @@ const archiveInfo = [
     title: "Flourish",
     link: "https://www.redefiningcountry.com",
     blurb: "Learn more about the history of the key sounds of the South.",
-    concept: null,
+    concept:
+      "The unique multi-sensory experience takes the nervous system from fight or flight mode to relax and digest mode.",
     process: null,
     description:
-      "The key idea of this project is to highlight BIPOC stories of the South and rewrite the narrative that country music is a white art form. This project includes 3D modeled flowers that are significant to the cultural groups being represented and music snippets gathered from the Spotify API to provide a brief overview of the modern and past sounds of country music.",
+      "Five different scenes bring concepts from nature into the hospital wellness space, with music, interactive technology and generative visuals that respond to the movements of the individuals using the space.",
     additional: null,
   },
   {
