@@ -12,6 +12,9 @@ export default function PhotoGrid({
   count = 7,
   grid = null,
 }: PhotoGridProps): ReactElement {
+  const isGif = (url: string) => {
+    return url.toLowerCase().endsWith(".gif");
+  };
   return (
     <div className="w-full lg:w-[97%] text-center mx-auto mt-10">
       {/* {mainImage && (
@@ -40,6 +43,7 @@ export default function PhotoGrid({
                 layout="fill"
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 objectFit="cover"
+                unoptimized={isGif(url)} // Use the unoptimized prop for GIFs
               />
             </div>
           ))}
