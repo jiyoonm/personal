@@ -49,7 +49,8 @@ const archiveInfo = [
     year: 2022,
     title: "Flourish",
     link: "https://www.redefiningcountry.com",
-    blurb: "Learn more about the history of the key sounds of the South.",
+    blurb:
+      "Mind body exercies through a large-scale installation and motion tracking.",
     concept:
       "The unique multi-sensory experience takes the nervous system from fight or flight mode to relax and digest mode.",
     process: null,
@@ -113,34 +114,34 @@ const archiveInfo = [
       "Strangers in different places view a scene together remotely, with its visuals affected by their presence and heartbeats, allowing them to share emotions through the visuals.",
     additional: null,
   },
-  {
-    id: "wifi",
-    imgUrl: "/static/wifi/data.png",
-    tags: ["Frontend", "Data Viz"],
-    year: "2020",
-    firstImage: "/static/wifi/title.png",
-    grid: null,
-    lastImage: null,
-    secondImage: "/static/wifi/data.png",
-    thirdImage: null,
-    finalImage: "/static/wifi/about.png",
-    team: null,
-    technologies: ["HTML", "CSS3", "Mapbox"],
+  // {
+  //   id: "wifi",
+  //   imgUrl: "/static/wifi/data.png",
+  //   tags: ["Frontend", "Data Viz"],
+  //   year: "2020",
+  //   firstImage: "/static/wifi/title.png",
+  //   grid: null,
+  //   lastImage: null,
+  //   secondImage: "/static/wifi/data.png",
+  //   thirdImage: null,
+  //   finalImage: "/static/wifi/about.png",
+  //   team: null,
+  //   technologies: ["HTML", "CSS3", "Mapbox"],
 
-    role: ["Creative Technologist", "Software Engineer"],
-    photoCount: null,
-    title: "Wifi NYC",
-    link: null,
-    blurb:
-      "A web-based interactive data viz about internet access in each council district of New York City.",
-    concept:
-      "Internet Access has become such a necessity in recent years and especially now due to COVID-19. A majority of schools and workplaces have made the switch to online learning and work from home, many have even announced the permanent switch or the option to do so. What happens when one does not have access to the Internet at their household? ",
-    process: null,
-    description:
-      "We chose to analyze and look closely at Internet Access datasets in New York City. We felt that this was a relevant topic in the current climate. The data includes information about locations with free access to wifi, including their address, wifi provider, and wifi limitations. After analyzing the data, we decided that the best way to present the information in an effect and clean way would be to create a data visualization. We hope that the visualization will demonstrate a variety of trends that will provide a deeper understanding of why certain areas have lower numbers of Internet Access. The topic of inequality in Internet access across different neighborhoods and areas is one that we hope to shine more light on.",
-    additional:
-      "For the final iteration of the project, we focused on adding meaningful interactions. We wanted this website to be able to be used as a resource for those seeking free internet, which is why we made each data point clickable, so users could see each location in their area.",
-  },
+  //   role: ["Creative Technologist", "Software Engineer"],
+  //   photoCount: null,
+  //   title: "Wifi NYC",
+  //   link: null,
+  //   blurb:
+  //     "A web-based interactive data viz about internet access in each council district of New York City.",
+  //   concept:
+  //     "Internet Access has become such a necessity in recent years and especially now due to COVID-19. A majority of schools and workplaces have made the switch to online learning and work from home, many have even announced the permanent switch or the option to do so. What happens when one does not have access to the Internet at their household? ",
+  //   process: null,
+  //   description:
+  //     "We chose to analyze and look closely at Internet Access datasets in New York City. We felt that this was a relevant topic in the current climate. The data includes information about locations with free access to wifi, including their address, wifi provider, and wifi limitations. After analyzing the data, we decided that the best way to present the information in an effect and clean way would be to create a data visualization. We hope that the visualization will demonstrate a variety of trends that will provide a deeper understanding of why certain areas have lower numbers of Internet Access. The topic of inequality in Internet access across different neighborhoods and areas is one that we hope to shine more light on.",
+  //   additional:
+  //     "For the final iteration of the project, we focused on adding meaningful interactions. We wanted this website to be able to be used as a resource for those seeking free internet, which is why we made each data point clickable, so users could see each location in their area.",
+  // },
   {
     id: "map",
     imgUrl: "/static/map/bgmap.jpg",

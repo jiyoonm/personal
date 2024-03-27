@@ -1,9 +1,21 @@
+import Image from "next/image";
 export default function Example() {
   return (
     <>
       <div className="w-full flex flex-row p-20 min-h-[85vh] justify-end	">
+        <div className=" w-full lg:basis-[30%] h-auto  mx-auto m-10">
+          <Image
+            src={"./e.gif"}
+            alt="Main Image"
+            layout="responsive"
+            width={100}
+            height={50} // Adjust height proportionally
+            objectFit="cover"
+            unoptimized={true}
+          />
+        </div>
         <div className="flex flex-col lg:basis-[50%] gap-10 lg:pr-32">
-          <div className="">Hello, I’m Jiyoon.</div>
+          <div className="">Hi, I’m Jiyoon.</div>
           <div className="basis-1/2">
             I’m a software engineer and creative technologist based in NYC. I’m
             currently a part of the team at Studio Elsewhere, developing
