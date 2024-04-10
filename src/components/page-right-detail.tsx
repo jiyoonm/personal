@@ -13,7 +13,7 @@ export default function PageRightDetail({ label, content }) {
   };
 
   return (
-    <div className=" px-5 flex  flex-col lg:flex-row w-full ">
+    <div className=" px-5 flex  flex-col lg:flex-col w-[60%] mx-auto ">
       <p className="text-[.8rem] font-thin mb-1 basis-[15%]">{label}</p>
       <p className="font-normal text-black basis-[70%]">
         {/* Render the content with line breaks */}

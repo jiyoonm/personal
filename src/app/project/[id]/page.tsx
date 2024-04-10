@@ -60,12 +60,12 @@ export default function Detail({ params }: { params: { id: string } }) {
             </div>
           )}
         </div>
-        <div className="flex flex-col md:flex-row md:items-center    justify-between border-gray-600 border-y md:h-36">
+        <div className="flex flex-col md:flex-row md:items-center flex-grow   justify-between border-gray-600 border-y md:h-[10rem]">
           <div className=" md:px-5 flex items-center basis-1/3  h-full m-2 md:m-0">
             <PageHeaderDetail label={"ROLE"} content={detail.role.join("/n")} />
           </div>
           <div className="md:border-l border-b border-gray-600  w-full md:h-full md:w-0"></div>
-          <div className="flex items-center basis-[30%] h-full m-2 ">
+          <div className="flex items-center basis-[30%] h-full m-2  ">
             <PageHeaderDetail label={"YEAR"} content={detail.year} />
           </div>
 
