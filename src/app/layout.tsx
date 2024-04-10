@@ -12,7 +12,7 @@ const montserrat = IBM_Plex_Sans({
 export const metadata = {
   title: "Jiyoon Moon",
   icons: {
-    icon: "icon.ico",
+    icon: "moon.ico",
   },
   description: "Jiyoon Moon Portfolio",
 };
