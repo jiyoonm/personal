@@ -1,16 +1,19 @@
-import { Inter } from "next/font/google";
+import { IBM_Plex_Sans } from "next/font/google";
 import localFont from "next/font/local";
 import Footer from "../components/layout/footer";
 import Layout from "../components/layout/layout";
 import Navbar from "../components/layout/navbar";
 import "../styles/global.css";
-const montserrat = Inter({
+const montserrat = IBM_Plex_Sans({
   subsets: ["latin"],
   weight: ["400", "500", "700"],
 });
 
 export const metadata = {
   title: "Jiyoon Moon",
+  icons: {
+    icon: "icon.ico",
+  },
   description: "Jiyoon Moon Portfolio",
 };
 const myFont = localFont({ src: "./fonts/archia-regular-webfont.woff2" });

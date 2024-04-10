@@ -32,7 +32,7 @@ export default function Detail({ params }: { params: { id: string } }) {
     <div className="w-full ">
       <div className="pb-10 lg:pb-20 ">
         <div className=" px-5 flex-col lg:flex-row flex justify-between w-full  pt-10 py-10">
-          <div className="flex flex-col gap-3  w-full lg:w-[45%] pr-15  justify-between">
+          <div className=" flex flex-col gap-3  w-full basis-2/5 pr-10  justify-between">
             <div className="flex flex-col gap-3">
               <PageHeaderDetail label={"PROJECT"} content={detail.title} />
               <PageHeaderDetail
@@ -49,7 +49,7 @@ export default function Detail({ params }: { params: { id: string } }) {
           </div>
 
           {detail.imgUrl && (
-            <div className="relative  h-[15rem] lg:h-[30rem] lg:w-[48rem]">
+            <div className="relative  h-[15rem] lg:h-[32rem] lg:w-[49rem]">
               <Image
                 src={detail.imgUrl}
                 alt="Main Image"

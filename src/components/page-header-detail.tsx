@@ -14,7 +14,7 @@ export default function PageHeaderDetail({ label, content }) {
 
   return (
     <div className=" flex flex-col align-middle h-max   ">
-      <p className="text-[.8rem] font-thin mb-1">{label}</p>
+      <p className="text-[.7rem] font-thin mb-1">{label}</p>
       <p className=" font-normal text-black">
         {/* Render the content with line breaks */}
         {formatContent(content)}
