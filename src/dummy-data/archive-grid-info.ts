@@ -2,7 +2,7 @@ const archiveInfo = [
   {
     id: "recharge",
     imgUrl: "/static/recharge/index.jpg",
-    tags: ["Backend"],
+    tags: ["Backend", "UI/UX"],
     firstImage: "/static/recharge/documentation/3.jpg",
     grid: [
       "/static/recharge/documentation/4.jpg",

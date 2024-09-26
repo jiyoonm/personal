@@ -9,8 +9,8 @@ export default function HeroSection({}) {
     <div className="border-b border-gray-100  pb-10">
       <div className="h-40"></div>
       <h1 className=" w-1/2 font-normal mx-7">
-        Jiyoon Moon is a Software Engineer and Creative Technologist currently
-        based in New York City.
+        Jiyoon Moon is a Designer and Creative Technologist currently based in
+        New York City.
       </h1>
     </div>
   );
