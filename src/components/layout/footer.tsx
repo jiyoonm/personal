@@ -3,27 +3,21 @@ import Link from "next/link";
 
 function Footer() {
   return (
-    <footer className="border-t border-gray-600 py-10 bg-stone-200 px-4">
+    <footer className="pt-16 pb-10 px-2">
       {/* <h2 className=" basis-2/5">
           <Link href="/">Jiyoon Moon</Link>
         </h2> */}
-      <ul className="   flex w-full justify-between text-lg  ">
+      <ul className="flex w-full text-lg justify-between ">
         <li>
           <Link href="/" className="hover:text-gray-300"></Link>
         </li>
-
-        {/* <li>
-            <Link href="/about" className="hover:text-gray-300">
-              Info
-            </Link>
-          </li> */}
-        <div className="  flex gap-12">
+        <div className="  flex gap-8">
           <li>
             <Link
               href="https://github.com/jiyoonm"
               className="hover:text-gray-300"
             >
-              GitHub
+              <p>GitHub</p>
             </Link>
           </li>
           <li>
@@ -31,7 +25,7 @@ function Footer() {
               href="https://www.linkedin.com/in/jiyoon-moon/"
               className="hover:text-gray-300"
             >
-              LinkedIn
+              <p>LinkedIn</p>
             </Link>
           </li>
         </div>

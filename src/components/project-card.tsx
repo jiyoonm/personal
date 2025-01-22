@@ -4,12 +4,13 @@ export default function ProjectCard({ info }) {
   return (
     <Link href={`/project/${info.id}`} className="px-[.35rem] pb-3 pt-[.7rem]">
       <div className=" ">
-        <div className="w-full h-auto overflow-hidden">
+        <div className="w-full h-auto overflow-hidden group rounded-sm">
           <Image
             src={info.imgUrl}
             alt="Final Image"
             layout="responsive"
             width={100}
+            className="transition-transform duration-300 ease-in-out transform group-hover:scale-105"
             height={50} // Adjust height proportionally
             objectFit="cover"
           />

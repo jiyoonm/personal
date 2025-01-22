@@ -100,7 +100,7 @@ const archiveInfo = [
     thirdImage: "/static/beats/image3.png",
     finalImage: null,
     team: null,
-    technologies: ["Python", "Touchdesigner", "Unity", "Websockets", "Arduino"],
+    technologies: ["Python", "Unity", "Arduino"],
     role: ["UI/UX Designer", "Software Engineer"],
     photoCount: null,
     title: "Distant Beats",

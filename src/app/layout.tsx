@@ -1,12 +1,17 @@
-import { IBM_Plex_Sans } from "next/font/google";
+import { IBM_Plex_Sans, Fraunces } from "next/font/google";
 import localFont from "next/font/local";
 import Footer from "../components/layout/footer";
 import Layout from "../components/layout/layout";
 import Navbar from "../components/layout/navbar";
 import "../styles/global.css";
-const montserrat = IBM_Plex_Sans({
+const ibmPlexSans = IBM_Plex_Sans({
   subsets: ["latin"],
   weight: ["400", "500", "700"],
+});
+const fraunces = Fraunces({
+  subsets: ["latin"],
+  weight: ["200", "700"],
+  variable: "--font-fraunces", // Define a CSS variable for easier use
 });
 
 export const metadata = {
@@ -16,7 +21,7 @@ export const metadata = {
   },
   description: "Jiyoon Moon Portfolio",
 };
-const myFont = localFont({ src: "./fonts/archia-regular-webfont.woff2" });
+// const myFont = localFont({ src: "./fonts/archia-regular-webfont.woff2" });
 
 export default function RootLayout({
   children,
@@ -24,8 +29,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={montserrat.className}>
+    <html lang="en" className={fraunces.variable}>
+      <body className={ibmPlexSans.className}>
         <Navbar />
         <Layout>{children}</Layout>
         <Footer />

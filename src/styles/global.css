@@ -5,10 +5,12 @@
 body {
   font-family: Helvetica, sans-serif;
 
-  @apply bg-[#f0f0f0] text-gray-700;
+  @apply bg-[#f0f0ed] text-black mx-10;
 }
 h1 {
-  @apply text-2xl font-bold  md:text-3xl;
+  font-family: var(--font-fraunces), serif;
+
+  @apply text-2xl font-light  md:text-4xl;
 }
 label {
   @apply text-xs;
@@ -21,7 +23,7 @@ h3 {
   @apply text-sm font-semibold  md:text-xl;
 }
 p {
-  @apply text-base;
+  @apply text-[1.3rem];
 }
 
 .container-main {

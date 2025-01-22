@@ -11,17 +11,17 @@ export default function ProjectListItem({ info }) {
   const handleMouseLeave = () => setIsHovered(false);
   return (
     <Link href={`/project/${info.id}`} className="">
-      <div className=" border-t border-gray-600  relative">
+      <div className=" border-t border-gray-700  relative">
         <div
-          className={`flex flex-row py-7 justify-between group ${
-            isHovered ? "bg-black bg-opacity-5" : ""
+          className={`flex flex-row py-4 justify-between group  ${
+            isHovered ? "" : ""
           } `}
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
         >
           <h4
-            className={`pl-4 text-base text-left basis-1/5 ${
-              isHovered ? "opacity-100" : "opacity-100"
+            className={`pl-10 text-[1.3rem] text-left basis-1/4 ${
+              isHovered ? "text-o" : "opacity-100"
             }`}
           >
             {info.title}
@@ -42,7 +42,7 @@ export default function ProjectListItem({ info }) {
               {info.year}
             </p> */}
           </div>
-          <div className="right-56 -top-14  z-50 absolute w-[20rem] h-56  opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
+          <div className="z-[-10] right-64 -top-14 border-r-4 absolute w-[20rem] h-56  opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
             <Image
               alt="image"
               src={info.imgUrl}

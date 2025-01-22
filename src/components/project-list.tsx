@@ -5,7 +5,7 @@ export default function ProjectList({ id }) {
   const filteredArchive = archiveInfo.filter((item) => item.id !== id);
   console.log(filteredArchive, "S");
   return (
-    <div className="grid grid-cols-1 gap-0   ">
+    <div className="grid grid-cols-1 gap-0  border-b border-gray-700 mt-16 mb-5 ">
       {filteredArchive.map((info, i) => {
         return <ProjectListItem info={info} key={info.id} />;
       })}
