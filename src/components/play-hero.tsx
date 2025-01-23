@@ -7,7 +7,7 @@ interface SSProps {
 export default function PlayHero({}) {
   return (
     <div className="pb-10">
-      <div className="h-20"></div>
+      <div className="h-10"></div>
       <h1 className=" w-[50%] font-normal ">
         <div className="flex flex-col  gap-8 lg:pr-32 text-primary-light ">
           <div className="">
