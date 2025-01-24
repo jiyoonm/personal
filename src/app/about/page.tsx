@@ -20,14 +20,14 @@ export default function Example() {
         <h1 className=" lg:w-[57%] font-normal ">
           <div className="flex flex-col  gap-20 lg:pr-32  ">
             <div className="">
-              I’m Jiyoon. I'm a designer and creative coder based in New York. I
-              create brands, websites, and interactive experiences.
+              I&apos;m Jiyoon. I&apos;m a designer and creative coder based in
+              New York. I create brands, websites, and interactive experiences.
             </div>
 
             <div className="">
-              I’m currently a part of the team at Studio Elsewhere, developing
-              immersive and interactive environments aimed at supporting mental
-              wellness in medical settings.
+              I&apos;m currently a part of the team at Studio Elsewhere,
+              developing immersive and interactive environments aimed at
+              supporting mental wellness in medical settings.
             </div>
             <div>
               I graduated with a BFA in Design and Technology and a minor in

@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import Image from "next/image";
 import Section from "./layout/section";
 interface SSProps {
   children?: React.ReactNode;
@@ -12,7 +13,7 @@ export default function HeroSection({}) {
     <div className="relative pb-10">
       {/* Background Image on Hover */}
 
-      <img
+      <Image
         src="/static/cook.png" // Change this to your actual image path
         alt="Cooking"
         className={`absolute inset-0 tr top-[60%] left-[20%] brightness-110	 transform -translate-x-1/2 -translate-y-1/2 ${
@@ -24,8 +25,8 @@ export default function HeroSection({}) {
       <h1 className=" w-[57%] font-normal ">
         <div className="flex flex-col  gap-8 lg:pr-32 text-primary-light ">
           <div className="">
-            Hi, I’m
-            <span className="text-black"> Jiyoon</span>🌙 👋&nbsp;I'm a{" "}
+            Hi, I&apos;m
+            <span className="text-black"> Jiyoon</span>🌙 👋&nbsp;I&apos;m a{" "}
             <span className="text-black">designer</span> and{" "}
             <span className="text-black"> creative coder </span>
             based in New York. I create brands, websites, and interactive
