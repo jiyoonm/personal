@@ -13,7 +13,9 @@ export default function HeroSection({}) {
     <div className="relative pb-10">
       {/* Background Image on Hover */}
 
-      <Image
+      <img
+        // width={500}
+        // height={300}
         src="/static/cook.png" // Change this to your actual image path
         alt="Cooking"
         className={`absolute inset-0 tr top-[60%] left-[20%] brightness-110	 transform -translate-x-1/2 -translate-y-1/2 ${
