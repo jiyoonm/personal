@@ -8,7 +8,7 @@ export default function PlayHero({}) {
   return (
     <div className="pb-10">
       <div className="h-20"></div>
-      <h1 className=" w-[50%] font-normal ">
+      <h1 className=" lg:w-[50%] font-normal ">
         <div className="flex flex-col  gap-8 lg:pr-32 text-primary-light ">
           <div className="">
             Welcome to my <span className="text-black">lab</span>✏️!

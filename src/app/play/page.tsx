@@ -17,14 +17,7 @@ export default function Home() {
   return (
 
     <main className="main flex min-h-screen flex-col items-center justify-between ">
-              <PlayHero /> 
-
-      {/* <App /> 
-      <div className="absolute top-0 left-0 z-10 w-full p-8 pointer-events-none	">
-        <PlayHero /> 
-        
-        
-      </div> */}
+      <PlayHero /> 
       <VideoGrid videos={videoUrls} />
     </main>
   );

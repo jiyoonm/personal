@@ -24,7 +24,7 @@ export default function HeroSection({}) {
       />
 
       <div className="h-20"></div>
-      <h1 className=" w-[57%] font-normal ">
+      <h1 className="  lg:w-[57%] font-normal ">
         <div className="flex flex-col  gap-8 lg:pr-32 text-primary-light ">
           <div className="">
             Hi, I&apos;m
