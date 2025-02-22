@@ -21,10 +21,10 @@ const archiveInfo = [
     blurb:
       "Immersive biophilic private spaces to support the well-being and recovery of care providers. ",
     concept:
-      "Studio Elsewhere’s Recharge Rooms are immersive biophilic private spaces that include music, scent, lighting, and sound, designed with research support from the Abilities Research Center at the Icahn School of Medicine at Mount Sinai to support the well-being and recovery of care providers. ",
-    process:
-    null,    description:
-    null,    additional: null,
+"Studio Elsewhere’s Recharge Rooms were created during the COVID-19 surge in New York to help frontline healthcare workers reduce stress through immersive, multisensory environments. A peer-reviewed study in Frontiers in Psychology found a 60% average reduction in self-reported stress after a single 15-minute session. Ongoing research with leading institutions continues to explore the broader impact of these restorative spaces.",
+    process:null,    
+    description:"Studio Elsewhere’s Recharge Rooms are immersive biophilic private spaces that include music, scent, lighting, and sound, designed with research support from the Abilities Research Center at the Icahn School of Medicine at Mount Sinai to support the well-being and recovery of care providers. ",
+    additional: null,
   },
   {
     id: "flourish",
