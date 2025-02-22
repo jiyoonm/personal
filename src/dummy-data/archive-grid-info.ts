@@ -23,10 +23,8 @@ const archiveInfo = [
     concept:
       "Studio Elsewhere’s Recharge Rooms are immersive biophilic private spaces that include music, scent, lighting, and sound, designed with research support from the Abilities Research Center at the Icahn School of Medicine at Mount Sinai to support the well-being and recovery of care providers. ",
     process:
-      "Studio Elsewhere’s Recharge Rooms are immersive biophilic private spaces that include music, scent, lighting, and sound, designed with research support from the Abilities Research Center at the Icahn School of Medicine at Mount Sinai to support the well-being and recovery of care providers. ",
-    description:
-      "Studio Elsewhere’s Recharge Rooms are immersive biophilic private spaces that include music, scent, lighting, and sound, designed with research support from the Abilities Research Center at the Icahn School of Medicine at Mount Sinai to support the well-being and recovery of care providers. ",
-    additional: null,
+    null,    description:
+    null,    additional: null,
   },
   {
     id: "flourish",
